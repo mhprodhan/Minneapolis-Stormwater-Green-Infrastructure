@@ -1,0 +1,71 @@
+{
+  "metadata": {
+    "model": "EPA SWMM 5.2 (Build 5.2.4)",
+    "study_area_acres": 82.607,
+    "storm_depth_inches": 4.2,
+    "storm_description": "NOAA Atlas 14, 10-year 24-hour depth, first-quartile 50% time pattern (Region 1 file supplied)",
+    "simulation_duration_hours": 30,
+    "source": "Results transcribed from user-supplied SWMM Status and Summary screenshots/text; SWMM not rerun by plotting script",
+    "units": {
+      "volume": "acre-ft",
+      "flow": "CFS",
+      "velocity": "ft/s",
+      "time": "elapsed hours"
+    }
+  },
+  "scenarios": {
+    "Baseline": {
+      "rainfall_acft": 28.912,
+      "initial_lid_storage_acft": 0.0,
+      "infiltration_acft": 8.626,
+      "runoff_acft": 20.111,
+      "final_storage_acft": 0.182,
+      "runoff_continuity_pct": -0.024,
+      "flow_routing_continuity_pct": -0.001,
+      "flooding_acft": 0.0,
+      "links": {
+        "C1": {"peak_flow_cfs": 10.79, "max_velocity_fts": 3.56, "peak_elapsed_hours": 2.0},
+        "C2": {"peak_flow_cfs": 25.71, "max_velocity_fts": 8.93, "peak_elapsed_hours": 2.0},
+        "C3": {"peak_flow_cfs": 42.66, "max_velocity_fts": 18.16, "peak_elapsed_hours": 2.0}
+      }
+    },
+    "Green_S1": {
+      "rainfall_acft": 28.912,
+      "initial_lid_storage_acft": 0.09,
+      "infiltration_acft": 9.108,
+      "runoff_acft": 19.369,
+      "final_storage_acft": 0.533,
+      "runoff_continuity_pct": -0.028,
+      "flow_routing_continuity_pct": -0.001,
+      "flooding_acft": 0.0,
+      "links": {
+        "C1": {"peak_flow_cfs": 8.09, "max_velocity_fts": 3.23, "peak_elapsed_hours": 2.6},
+        "C2": {"peak_flow_cfs": 22.94, "max_velocity_fts": 8.54, "peak_elapsed_hours": 2.0},
+        "C3": {"peak_flow_cfs": 39.89, "max_velocity_fts": 17.81, "peak_elapsed_hours": 2.0}
+      }
+    },
+    "Green_All": {
+      "rainfall_acft": 28.912,
+      "initial_lid_storage_acft": 0.826,
+      "infiltration_acft": 12.884,
+      "runoff_acft": 13.507,
+      "final_storage_acft": 3.363,
+      "runoff_continuity_pct": -0.054,
+      "flow_routing_continuity_pct": -0.001,
+      "flooding_acft": 0.0,
+      "links": {
+        "C1": {"peak_flow_cfs": 6.75, "max_velocity_fts": 3.09, "peak_elapsed_hours": 4.0},
+        "C2": {"peak_flow_cfs": 16.49, "max_velocity_fts": 7.99, "peak_elapsed_hours": 3.4666666667},
+        "C3": {"peak_flow_cfs": 28.6, "max_velocity_fts": 16.14, "peak_elapsed_hours": 3.5}
+      }
+    }
+  },
+  "lid_definition": {
+    "control": "RG_01",
+    "type": "Rain Garden",
+    "number_of_units_per_treated_subcatchment": 10,
+    "fraction_of_total_subcatchment_area": 0.05,
+    "fraction_of_non_lid_impervious_area_treated": 0.5,
+    "unit_area_square_feet": {"S1": 1950.6, "S2": 3240.6, "S3": 4306.6, "S4": 2752.8, "S5": 2561.3, "S6": 3179.9}
+  }
+}

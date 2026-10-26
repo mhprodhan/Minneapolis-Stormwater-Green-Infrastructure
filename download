@@ -1,0 +1,8 @@
+# Generated SWMM simulation outputs (recreate by running the .inp files)
+*.out
+*.rpt
+*.hst
+*.bak
+*.ini
+__pycache__/
+*.pyc
